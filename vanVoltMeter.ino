@@ -8,6 +8,11 @@
 //output to pin 2 via a 10K resistor. Since I haven't gotten around to
 //building the debutton circuit, that's exactly what I'm currently doing
 //
+//Connect both the ADC and the 7-segment display to the 5V out of the arduino
+//and give them common ground. Connect their I2C lines to the I2C pins of the
+//arduino as well. Finally, connect the high side of button to 3.3V, and the
+//low side to pin 2, through a resistor.
+//
 //To use: connect input 0 of the ADC to the low side of the potential change
 //to be measured, and input 1 on the high side. You can fine tune the output
 //by changing the value of averageSize, but since it is #defined, it can only
